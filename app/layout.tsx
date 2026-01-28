@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "React Calendar Generator",
-  description: "Calendar Generator App using Next.js 13 and Tailwind CSS",
+  description:
+    "Calendar Generator App Template using Next.js 15 and Tailwind CSS",
 };
 
 export default function RootLayout({
