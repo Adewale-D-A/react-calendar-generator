@@ -1,28 +1,5 @@
-const monthsAndDayStrings = {
-  monthString: [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ],
-  dayString: [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ],
-};
+
+import monthsAndDayStrings from "../_assets/days-months-string.json";
 
 export default function generateCalendarDays({
   currentDay,
@@ -61,7 +38,7 @@ export default function generateCalendarDays({
     let calendarDay = {
       month: firstDayOfMonth.getMonth(),
       day: firstDayOfMonth.getDate(),
-      weekday: monthsAndDayStrings.dayString[firstDayOfMonth.getDay()],
+      weekday: monthsAndDayStrings.day_string[firstDayOfMonth.getDay()],
       year: firstDayOfMonth.getFullYear(),
       currentMonth:
         firstDayOfMonth.getMonth() === currentDay.getMonth() ? true : false,

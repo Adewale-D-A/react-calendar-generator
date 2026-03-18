@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import generateCalendarDays from "../_utils/generate-calendar-data";
-import monthsAndDayStrings from "../_assets/dasy-months-string.json";
+import monthsAndDayStrings from "../_assets/days-months-string.json";
 
 export default function RenderCalendarView({
   defaultCurrentDate,
